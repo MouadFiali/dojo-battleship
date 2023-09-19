@@ -82,6 +82,9 @@ export default {
 
 <style lang="scss" scoped>
 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
