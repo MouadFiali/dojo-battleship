@@ -111,7 +111,6 @@ export default {
   font-size: 20px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid black;
   cursor: pointer;
 }
 </style>
