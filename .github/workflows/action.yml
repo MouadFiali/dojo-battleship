@@ -2,8 +2,11 @@ name: action
 run-name: ${{ github.actor }} - ${{ github.event_name }} - ${{ github.sha }}
 on: [push]
 jobs:
-  first-job:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Hello World!"
+      - name: "⚙️📦️ Install & cache node dependencies"
+        uses: ./.github/actions/install-node-deps
+      - name: "🚀️ Deploy using the automation script"
+        run: "chmod +x ./.scripts/automate.sh && ./.scripts/automate.sh"
