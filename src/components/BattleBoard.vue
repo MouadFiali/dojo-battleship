@@ -56,7 +56,7 @@ export default {
 
 <template>
   <div class="battle-board">
-    <div class="title">BattleShip</div>
+    <div class="title">BattleShip Game</div>
     <div class="start-button-div">
       <button class="start-button"  @click="startGame">Start Game</button>
     </div>
@@ -85,7 +85,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 40px;
+  color: red;
   font-weight: bold;
   margin-bottom: 30px;
 }
